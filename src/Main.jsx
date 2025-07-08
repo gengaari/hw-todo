@@ -9,10 +9,12 @@ function Main(){
         const storedTodos = localStorage.getItem('tasks');
         if(!storedTodos){
             return []
-        } else {
+        } 
+        else {
             return JSON.parse(storedTodos);
         }
     });
+
     const [tasksTitle, setTasksTitle] = useState('');
 
     useEffect(()=>{
@@ -52,6 +54,7 @@ function Main(){
         <div className='container'>
             <h1>Note your tasks</h1>
             <span>{month + ' ' + day + ', ' + year}</span>
+
             <div className='input-filed'>
                 <input type='text' 
                 value={tasksTitle}
@@ -63,6 +66,7 @@ function Main(){
                 </button>
                 <label>Task name</label>
             </div>
+            
             <List tasks={tasks} />
         </div>
     );

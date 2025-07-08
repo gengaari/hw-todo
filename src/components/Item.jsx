@@ -1,7 +1,6 @@
 import {useState} from 'react';
 import Icon from './Icon';
 
-
 export default function Item({title, id, status}){
 
     const [checked, setChecked] = useState(status);

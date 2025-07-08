@@ -32,24 +32,6 @@ span {
   z-index: 2;
 }
 
-.input-field {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.input-field input[type="text"] {
-  flex: 1;
-  padding: 8px;
-  font-size: 16px;
-}
-
-.input-field input[type="button"] {
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .icon-button {
   background: none;
   border: none;
